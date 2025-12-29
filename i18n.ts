@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 const locales = ["ko", "en"];
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  let locale = await requestLocale;
+  const locale = await requestLocale;
 
   if (!locale || !locales.includes(locale)) {
     notFound();

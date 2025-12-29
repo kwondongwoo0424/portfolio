@@ -1,40 +1,41 @@
-export const profile = {
+export const profileMessages = {
   ko: {
-    intro: "프론트엔드 개발자 권동우입니다.",
-    name: "권동우",
+    name: "권동우 (Dongwoo Kwon)",
     major: "프론트엔드 개발자",
     birth: "2008.04.24 (남, 한국인)",
-    residence: "경상북도 경주시",
+    residence: "대한민국 경상북도 경주시",
     education: "대구소프트웨어마이스터고 24.03. ~ 27.02 (졸업 예정)",
-    explanation: `안녕하세요, 실패를 통해 더욱 성장할 수 있다고 믿는 신입 개발자 권동우입니다.
-                  프론트엔드 기술에 흥미를 갖고 활발히 활동하고 있으며,
-                  애자일과 MVP 방식으로 개발하는 것을 즐깁니다.
-                  서비스 기획 / 디자인 / 개발 / 배포 / 운영 경험이 있습니다.
-                  보다 나은 개발자가 되기 위해 끊임없이 도전하며,
-                  실패 속에서 배움을 얻고 성장하고 있습니다.
-                  프로젝트를 진행할때 프로덕트 오너십을 가지고 지속적으로 학습하고 UX를 개선합니다.
-                  “나를 죽이지 못하는 것은 나를 더 강하게 만든다” 는 니체의 말처럼,
-                  실패를 성장의 발판으로 삼아 더 나은 개발자로 나아가고 있습니다.`,
+    military: "미필",
+    status: "구직 중",
+    introduction: {
+      paragraph1:
+        "프론트엔드 기술에 흥미를 갖고 활발히 활동하고 있으며, 애자일과 MVP 방식으로 개발하는 것을 즐깁니다.",
+      paragraph2:
+        "서비스 기획, 디자인, 개발, 배포, 운영 전반을 경험했으며 프로덕트 오너십을 가지고 UX 개선을 지속합니다.",
+    },
   },
   en: {
-    intro: "I'm a frontend developer.",
-    name: "Dongwoo Kwon",
+    name: "Dongwoo Kwon (권동우)",
     major: "Frontend Developer",
     birth: "2008.04.24 (Male, Korean)",
-    residence: "경상북도 경주시",
-    education: "대구소프트웨어마이스터고 24.03. ~ 27.02 (졸업 예정)",
-    explanation: `안녕하세요, 실패를 통해 더욱 성장할 수 있다고 믿는 신입 개발자 권동우입니다.
-                  프론트엔드 기술에 흥미를 갖고 활발히 활동하고 있으며,
-                  애자일과 MVP 방식으로 개발하는 것을 즐깁니다.
-                  서비스 기획 / 디자인 / 개발 / 배포 / 운영 경험이 있습니다.
-                  보다 나은 개발자가 되기 위해 끊임없이 도전하며,
-                  실패 속에서 배움을 얻고 성장하고 있습니다.
-                  프로젝트를 진행할때 프로덕트 오너십을 가지고 지속적으로 학습하고 UX를 개선합니다.
-                  “나를 죽이지 못하는 것은 나를 더 강하게 만든다” 는 니체의 말처럼,
-                  실패를 성장의 발판으로 삼아 더 나은 개발자로 나아가고 있습니다.`,
+    residence: "Gyeongju, Gyeongsangbuk-do, South Korea",
+    education:
+      "Daegu Software Meister High School (Mar. 2024 - Feb. 2027, Expected Graduation)",
+    military: "unfulfilled",
+    status: "Open to Work",
+    introduction: {
+      paragraph1:
+        "I am highly interested in frontend technologies and actively engaged in learning and development. I enjoy building products using agile and MVP-driven approaches.",
+      paragraph2:
+        "I have experience across the entire product lifecycle, including service planning, design, development, deployment, and operation, and I continuously improve UX with strong product ownership.",
+    },
   },
+
   phone: "+82 10-8786-9260",
   email: "hyeonggyugwon3@gmail.com",
-  github: "github.com/kwondongwoo0424",
-  linkedin: "",
-};
+
+  links: {
+    github: "github.com/kwondongwoo0424",
+    linkedin: "linkedin.com/",
+  },
+} as const;

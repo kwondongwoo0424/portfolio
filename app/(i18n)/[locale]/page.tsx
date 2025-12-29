@@ -1,11 +1,11 @@
-import { useTranslations } from "next-intl";
+import { IntroSection } from "@/components/IntroSection";
+import LanguageSwitch from "@/components/LanguageSwich"
 
 export default function PortfolioPage() {
-  const t = useTranslations("Intro");
-
   return (
     <>
-      <h1>{t("title")}</h1>
+      <LanguageSwitch />
+      <IntroSection />
     </>
   );
 }

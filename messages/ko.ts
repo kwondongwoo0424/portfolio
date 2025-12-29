@@ -1,11 +1,40 @@
 const messages = {
-  Intro: {
-    title: "안녕하세요, 프론트엔드 개발자입니다",
-    description: "사용자 경험을 중요하게 생각합니다",
-  },
-  Nav: {
-    projects: "프로젝트",
-    contact: "연락하기",
+  headline: "UX에 진심인 프론트엔드 개발자",
+
+  section: {
+    profileNav: {
+      basicInfo: {
+        sectionTitle: "기본 정보",
+        birth: "생년월일",
+        residence: "거주지",
+      },
+      educationMilitary: {
+        sectionTitle: "학력 및 병역",
+        education: "학력",
+        military: "병역",
+      },
+      etc: {
+        sectionTitle: "기타",
+      },
+    },
+
+    projects: {
+      sectionTitle: "프로젝트",
+      team: "팀 프로젝트",
+      personal: "개인 프로젝트",
+    },
+
+    qualifications: {
+      sectionTitle: "자격증",
+      name: "이름",
+      contents: "내용",
+      organizedBy: "주관",
+      date: "일시",
+    },
+
+    techStack: {
+      sectionTitle: "기술 스택",
+    },
   },
 };
 
