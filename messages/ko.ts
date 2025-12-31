@@ -1,5 +1,5 @@
 const messages = {
-  headline: "UX에 진심인 프론트엔드 개발자",
+  headline: "UX를 최우선으로 생각하는 개발자",
 
   section: {
     profileNav: {

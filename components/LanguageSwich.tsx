@@ -6,18 +6,21 @@ const LanguageSwitch = () => {
   const pathname = usePathname();
   const router = useRouter();
 
-  const switchLanguage = () => {
-    if (pathname.startsWith("/ko")) {
-      router.push(pathname.replace("/ko", "/en"));
-    } else {
-      router.push(pathname.replace("/en", "/ko"));
-    }
-  };
-
   return (
-    <button onClick={switchLanguage}>
-      언어 변경
-    </button>
+    <div className="flex gap-2 justify-end">
+      <a
+        onClick={() => router.push(pathname.replace("/en", "/ko"))}
+        className="cursor-pointer text-[#0e7490] hover:underline"
+      >
+        한국어
+      </a>
+      <a
+        onClick={() => router.push(pathname.replace("/ko", "/en"))}
+        className="cursor-pointer text-[#0e7490] hover:underline"
+      >
+        English
+      </a>
+    </div>
   );
 };
 

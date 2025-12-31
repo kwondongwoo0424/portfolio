@@ -1,4 +1,18 @@
-export const profileMessages = {
+type LocaleData = {
+  name: string;
+  major: string;
+  birth: string;
+  residence: string;
+  education: string;
+  military: string;
+  status: string;
+  introduction: {
+    paragraph1: string;
+    paragraph2: string;
+  };
+};
+
+export const localeProfileData: Record<"ko" | "en", LocaleData> = {
   ko: {
     name: "권동우 (Dongwoo Kwon)",
     major: "프론트엔드 개발자",
@@ -30,10 +44,11 @@ export const profileMessages = {
         "I have experience across the entire product lifecycle, including service planning, design, development, deployment, and operation, and I continuously improve UX with strong product ownership.",
     },
   },
+};
 
+export const commonProfileData = {
   phone: "+82 10-8786-9260",
   email: "hyeonggyugwon3@gmail.com",
-
   links: {
     github: "github.com/kwondongwoo0424",
     linkedin: "linkedin.com/",
