@@ -10,6 +10,7 @@ type LocaleData = {
     paragraph1: string;
     paragraph2: string;
   };
+  resume: string;
 };
 
 export const localeProfileData: Record<"ko" | "en", LocaleData> = {
@@ -27,6 +28,7 @@ export const localeProfileData: Record<"ko" | "en", LocaleData> = {
       paragraph2:
         "서비스 기획, 디자인, 개발, 배포, 운영 전반을 경험했으며 프로덕트 오너십을 가지고 UX 개선을 지속합니다.",
     },
+    resume: "이력서",
   },
   en: {
     name: "Dongwoo Kwon (권동우)",
@@ -43,6 +45,7 @@ export const localeProfileData: Record<"ko" | "en", LocaleData> = {
       paragraph2:
         "I have experience across the entire product lifecycle, including service planning, design, development, deployment, and operation, and I continuously improve UX with strong product ownership.",
     },
+    resume: "Resume",
   },
 };
 
@@ -52,5 +55,6 @@ export const commonProfileData = {
   links: {
     github: "github.com/kwondongwoo0424",
     linkedin: "linkedin.com/",
+    notion: "",
   },
 } as const;
