@@ -4,7 +4,7 @@ import LanguageSwitch from "@/components/LanguageSwich";
 export default function PortfolioPage() {
   return (
     <div className="flex justify-center">
-      <div className="w-7/12">
+      <div className="min-w-96">
         <LanguageSwitch />
         <IntroSection />
       </div>
