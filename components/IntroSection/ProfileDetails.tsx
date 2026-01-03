@@ -10,7 +10,7 @@ type ProfileDetailsProps = {
   residence: string;
   education: string;
   military: string;
-  resume: string;
+  portfolio: string;
 };
 
 export function ProfileDetails({
@@ -18,7 +18,7 @@ export function ProfileDetails({
   residence,
   education,
   military,
-  resume,
+  portfolio,
 }: ProfileDetailsProps) {
   const t = useTranslations();
   const locale = useLocale();
@@ -72,28 +72,28 @@ export function ProfileDetails({
           href={`https://${commonProfileData.links.github}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm hover:underline text-gray-700 flex items-center gap-1.5"
+          className="text-sm hover:underline text-gray-700 flex items-center gap-1.5 min-w-0"
         >
-          <Image src={githubIcon} alt={"githubIcon"} className="w-4" />
-          {commonProfileData.links.github}
+          <Image src={githubIcon} alt={"githubIcon"} className="w-4 flex-shrink-0" />
+          <span className="truncate">{commonProfileData.links.github}</span>
         </a>
         <a
           href={`https://${commonProfileData.links.linkedin}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm hover:underline text-gray-700 flex items-center gap-1.5"
+          className="text-sm hover:underline text-gray-700 flex items-center gap-1.5 min-w-0"
         >
-          <Image src={linkedinIcon} alt={"linkedinIcon"} className="w-4" />
-          {commonProfileData.links.linkedin}
+          <Image src={linkedinIcon} alt={"linkedinIcon"} className="w-4 flex-shrink-0" />
+          <span className="truncate">{commonProfileData.links.linkedin}</span>
         </a>
         <a
-          href={`/resume_${locale}.pdf`}
+          href={`/portfolio_${locale}.pdf`}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm hover:underline text-gray-700 flex items-center gap-1.5"
+          className="text-sm hover:underline text-gray-700 flex items-center gap-1.5 min-w-0"
         >
-          <FileUser className="w-4 text-gray-700" />
-          {resume}
+          <FileUser className="w-4 text-gray-700 flex-shrink-0" />
+          <span className="truncate">{portfolio}</span>
         </a>
         {/* <a
           href={`https://${commonProfileData.links.notion}`}

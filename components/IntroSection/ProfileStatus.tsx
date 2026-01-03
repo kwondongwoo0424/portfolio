@@ -6,10 +6,12 @@ type ProfileStatusProps = {
 };
 
 export function ProfileStatus({ status, isEmployed }: ProfileStatusProps) {
+  const textColor = isEmployed ? "text-red-800" : "text-green-800";
+  const bgColor = isEmployed ? "bg-red-100" : "bg-green-100";
   return (
-    <span className="flex justify-between items-center gap-1 bg-green-100 py-2 px-2.5 rounded-full min-w-max">
+    <span className={`inline-flex items-center gap-1 ${bgColor} py-2 px-2.5 rounded-full`}>
       <Ripple isEmployed={isEmployed} />
-      <p className="text-xs text-green-800">{status}</p>
+      <p className={`text-xs ${textColor}`}>{status}</p>
     </span>
   );
 }
