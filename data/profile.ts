@@ -10,7 +10,7 @@ type LocaleData = {
     paragraph1: string;
     paragraph2: string;
   };
-  resume: string;
+  portfolio: string;
 };
 
 export const localeProfileData: Record<"ko" | "en", LocaleData> = {
@@ -24,11 +24,11 @@ export const localeProfileData: Record<"ko" | "en", LocaleData> = {
     status: "구직 중",
     introduction: {
       paragraph1:
-        "프론트엔드 기술에 흥미를 갖고 활발히 활동하고 있으며, 애자일과 MVP 방식으로 개발하는 것을 즐깁니다.",
+        "보다 나은 개발자가 되기 위해 끊임없이 도전하며, 실패 속에서 배움을 얻고 성장하고 있습니다.",
       paragraph2:
-        "서비스 기획, 디자인, 개발, 배포, 운영 전반을 경험했으며 프로덕트 오너십을 가지고 UX 개선을 지속합니다.",
+        "“나를 죽이지 못하는 것은 나를 더 강하게 만든다” 는 니체의 말처럼, 실패를 성장의 발판으로 삼아 더 나은 개발자로 나아가고 있습니다.",
     },
-    resume: "이력서",
+    portfolio: "포트폴리오",
   },
   en: {
     name: "Dongwoo Kwon (권동우)",
@@ -41,11 +41,11 @@ export const localeProfileData: Record<"ko" | "en", LocaleData> = {
     status: "Open to Work",
     introduction: {
       paragraph1:
-        "I am highly interested in frontend technologies and actively engaged in learning and development. I enjoy building products using agile and MVP-driven approaches.",
+        "I continuously challenge myself to become a better developer, learning and growing from failures.",
       paragraph2:
-        "I have experience across the entire product lifecycle, including service planning, design, development, deployment, and operation, and I continuously improve UX with strong product ownership.",
+        "Like Nietzsche's quote, “What does not kill me makes me stronger”, I use failure as a stepping stone to become a better developer.",
     },
-    resume: "Resume",
+    portfolio: "Portfolio",
   },
 };
 
