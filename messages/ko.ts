@@ -1,5 +1,5 @@
 const messages = {
-  headline: "UX를 최우선으로 생각하는 개발자",
+  headline: "실패가 즐거운 개발자",
 
   section: {
     profileNav: {
@@ -25,10 +25,11 @@ const messages = {
     },
 
     qualifications: {
-      sectionTitle: "자격증",
-      name: "이름",
-      contents: "내용",
-      organizedBy: "주관",
+      sectionTitle: "자격 및 역량 인증",
+      category: "구분",
+      name: "명칭",
+      achievement: "성과",
+      organization: "주관",
       date: "일시",
     },
 

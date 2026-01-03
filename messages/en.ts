@@ -1,5 +1,5 @@
 const messages = {
-  headline: "Developers who prioritize UX",
+  headline: "A Developer Who Embraces Failure",
 
   section: {
     profileNav: {
@@ -25,10 +25,11 @@ const messages = {
     },
 
     qualifications: {
-      sectionTitle: "Certifications",
+      sectionTitle: "Qualifications & Assessments",
+      category: "Category",
       name: "Name",
-      contents: "Details",
-      organizedBy: "Issued By",
+      achievement: "Achievement",
+      organization: "Organization",
       date: "Date",
     },
 
