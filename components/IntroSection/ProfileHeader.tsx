@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
 import profileImg from "@/assets/profileImg.jpeg";
 import { commonProfileData } from "@/data/profile";
-import { ProfileStatus } from "./ProfileStatus";
+import ProfileStatus from "./ProfileStatus";
 
 type ProfileHeaderProps = {
   name: string;
@@ -10,7 +10,7 @@ type ProfileHeaderProps = {
   status: string;
 };
 
-export function ProfileHeader({ name, major, status }: ProfileHeaderProps) {
+const ProfileHeader = ({ name, major, status }: ProfileHeaderProps) => {
   const isEmployed = status !== "구직 중" && status !== "Open to Work";
 
   return (
@@ -44,4 +44,6 @@ export function ProfileHeader({ name, major, status }: ProfileHeaderProps) {
       </div>
     </div>
   );
-}
+};
+
+export default ProfileHeader;

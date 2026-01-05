@@ -1,19 +1,21 @@
-import { IntroSection } from "@/components/IntroSection";
+import IntroSection from "@/components/IntroSection";
 import LanguageSwitch from "@/components/LanguageSwich";
-import { QualificationsSection } from "@/components/QualificationsSection";
+import QualificationsSection from "@/components/QualificationsSection";
+import TechStacksSection from "@/components/TechStacksSection";
 
-export default function PortfolioPage() {
+const PortfolioPage = () => {
   return (
     <div className="flex justify-center w-full">
-      <div className="max-w-3xl w-full flex flex-col gap-2">
+      <div className="max-w-3xl w-full flex flex-col gap-2 max-[600px]:px-4">
         <LanguageSwitch />
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
           <IntroSection />
-          <div className="max-[600px]:px-4">
-            <QualificationsSection />
-          </div>
+          <TechStacksSection />
+          <QualificationsSection />
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default PortfolioPage;

@@ -5,7 +5,7 @@ type ProfileStatusProps = {
   isEmployed: boolean;
 };
 
-export function ProfileStatus({ status, isEmployed }: ProfileStatusProps) {
+const ProfileStatus = ({ status, isEmployed }: ProfileStatusProps) => {
   const textColor = isEmployed ? "text-red-800" : "text-green-800";
   const bgColor = isEmployed ? "bg-red-100" : "bg-green-100";
   return (
@@ -14,4 +14,6 @@ export function ProfileStatus({ status, isEmployed }: ProfileStatusProps) {
       <p className={`text-xs ${textColor}`}>{status}</p>
     </span>
   );
-}
+};
+
+export default ProfileStatus;

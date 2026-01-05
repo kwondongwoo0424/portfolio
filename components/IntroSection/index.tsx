@@ -2,10 +2,10 @@
 
 import { useLocale, useTranslations } from "next-intl";
 import { localeProfileData } from "@/data/profile";
-import { ProfileHeader } from "./ProfileHeader";
-import { ProfileDetails } from "./ProfileDetails";
+import ProfileHeader from "./ProfileHeader";
+import ProfileDetails from "./ProfileDetails";
 
-export function IntroSection() {
+const IntroSection = () => {
   const t = useTranslations();
   const locale = useLocale() as "ko" | "en";
   const profileData = localeProfileData[locale];
@@ -28,11 +28,13 @@ export function IntroSection() {
           />
         </div>
       </div>
-      <div className="max-[600px]:px-4">
+      <div>
         <h1 className="text-lg font-medium">{t("headline")}</h1>
         <p>{profileData.introduction.paragraph1}</p>
         <p>{profileData.introduction.paragraph2}</p>
       </div>
     </div>
   );
-}
+};
+
+export default IntroSection;

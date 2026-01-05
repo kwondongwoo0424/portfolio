@@ -13,13 +13,13 @@ type ProfileDetailsProps = {
   portfolio: string;
 };
 
-export function ProfileDetails({
+const ProfileDetails = ({
   birth,
   residence,
   education,
   military,
   portfolio,
-}: ProfileDetailsProps) {
+}: ProfileDetailsProps) => {
   const t = useTranslations();
   const locale = useLocale();
 
@@ -74,7 +74,11 @@ export function ProfileDetails({
           rel="noopener noreferrer"
           className="text-sm hover:underline text-gray-700 flex items-center gap-1.5 min-w-0"
         >
-          <Image src={githubIcon} alt={"githubIcon"} className="w-4 flex-shrink-0" />
+          <Image
+            src={githubIcon}
+            alt={"githubIcon"}
+            className="w-4 flex-shrink-0"
+          />
           <span className="truncate">{commonProfileData.links.github}</span>
         </a>
         <a
@@ -83,7 +87,11 @@ export function ProfileDetails({
           rel="noopener noreferrer"
           className="text-sm hover:underline text-gray-700 flex items-center gap-1.5 min-w-0"
         >
-          <Image src={linkedinIcon} alt={"linkedinIcon"} className="w-4 flex-shrink-0" />
+          <Image
+            src={linkedinIcon}
+            alt={"linkedinIcon"}
+            className="w-4 flex-shrink-0"
+          />
           <span className="truncate">{commonProfileData.links.linkedin}</span>
         </a>
         <a
@@ -106,4 +114,6 @@ export function ProfileDetails({
       </div>
     </div>
   );
-}
+};
+
+export default ProfileDetails;
