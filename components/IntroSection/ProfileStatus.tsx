@@ -1,4 +1,4 @@
-import Ripple from "@/components/Ripple";
+import Ripple from "@/components/common/Ripple";
 
 type ProfileStatusProps = {
   status: string;
