@@ -1,8 +1,9 @@
 import IntroSection from "@/components/IntroSection";
-import LanguageSwitch from "@/components/LanguageSwich";
+import LanguageSwitch from "@/components/common/LanguageSwich";
 import QualificationsSection from "@/components/QualificationsSection";
 import TechStacksSection from "@/components/TechStacksSection";
-import Footer from "@/components/Footer";
+import Footer from "@/components/common/Footer";
+import FeaturedProjectSection from "@/components/FeaturedProjectSection";
 
 const PortfolioPage = () => {
   return (
@@ -12,6 +13,7 @@ const PortfolioPage = () => {
         <div className="flex flex-col gap-8">
           <IntroSection />
           <TechStacksSection />
+          <FeaturedProjectSection />
           <QualificationsSection />
           <Footer />
         </div>
