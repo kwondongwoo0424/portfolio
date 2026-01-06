@@ -54,6 +54,10 @@ export const techStacksData: TechStackCategory[] = [
         name: "Tanstack Query",
       },
       {
+        icon: "electron",
+        name: "Electron",
+      },
+      {
         icon: "zustand",
         name: "Zustand",
       },
