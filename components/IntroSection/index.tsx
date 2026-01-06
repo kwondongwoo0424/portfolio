@@ -1,13 +1,11 @@
-"use client";
-
-import { useLocale, useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 import { localeProfileData } from "@/data/profile";
 import ProfileHeader from "./ProfileHeader";
 import ProfileDetails from "./ProfileDetails";
 
-const IntroSection = () => {
-  const t = useTranslations();
-  const locale = useLocale() as "ko" | "en";
+const IntroSection = async () => {
+  const t = await getTranslations();
+  const locale = (await getLocale()) as "ko" | "en";
   const profileData = localeProfileData[locale];
 
   return (

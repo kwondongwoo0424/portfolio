@@ -1,5 +1,3 @@
-"use client";
-
 import TechStackIcon from "./TechStackIcon";
 
 type TechStack = {

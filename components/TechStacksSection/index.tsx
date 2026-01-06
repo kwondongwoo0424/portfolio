@@ -1,20 +1,15 @@
-"use client";
-
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { techStacksData } from "@/data/techStacks";
 import TechStackBox from "./TechStackBox";
+import SectionWrapper from "@/components/common/SectionWrapper";
 
-const TechStacksSection = () => {
-  const t = useTranslations();
-  const techStack = techStacksData;
+const TechStacksSection = async () => {
+  const t = await getTranslations();
 
   return (
-    <div className="flex flex-col gap-4">
-      <h1 className="text-xl font-semibold text-[#008ee3]">
-        {t("section.techStack.sectionTitle")}
-      </h1>
+    <SectionWrapper title={t("section.techStack.sectionTitle")}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-        {techStack.map((category, index) => (
+        {techStacksData.map((category, index) => (
           <TechStackBox
             key={index}
             title={category.title}
@@ -22,7 +17,7 @@ const TechStacksSection = () => {
           />
         ))}
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
 

@@ -1,18 +1,14 @@
-"use client";
-
-import { useLocale, useTranslations } from "next-intl";
+import { getLocale, getTranslations } from "next-intl/server";
 import { qualificationsData } from "@/data/qualifications";
+import SectionWrapper from "@/components/common/SectionWrapper";
 
-const QualificationsSection = () => {
-  const t = useTranslations();
-  const locale = useLocale() as "ko" | "en";
+const QualificationsSection = async () => {
+  const t = await getTranslations();
+  const locale = (await getLocale()) as "ko" | "en";
   const qualifications = qualificationsData[locale];
 
   return (
-    <div className="flex flex-col gap-4">
-      <h1 className="text-xl font-semibold text-[#008ee3]">
-        {t("section.qualifications.sectionTitle")}
-      </h1>
+    <SectionWrapper title={t("section.qualifications.sectionTitle")}>
       <div className="overflow-x-auto -mx-4 px-4 scrollbar-hide">
         <table className="w-full border-collapse min-w-[600px]">
           <thead>
@@ -72,7 +68,7 @@ const QualificationsSection = () => {
           </tbody>
         </table>
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
 
