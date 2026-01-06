@@ -33,7 +33,7 @@ export const localeProfileData: Record<"ko" | "en", LocaleData> = {
   en: {
     name: "Dongwoo Kwon (권동우)",
     major: "Frontend Developer",
-    birth: "2008.04.24 (Male, Korean)",
+    birth: "04/24/2008 (Male, Korean)",
     residence: "Gyeongju, Gyeongsangbuk-do, South Korea",
     education:
       "Daegu Software Meister High School (Mar. 2024 - Feb. 2027, Expected Graduation)",
