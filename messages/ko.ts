@@ -18,10 +18,20 @@ const messages = {
       },
     },
 
-    projects: {
-      sectionTitle: "프로젝트",
-      team: "팀 프로젝트",
-      personal: "개인 프로젝트",
+    techStack: {
+      sectionTitle: "기술 스택",
+    },
+
+    internship: {
+      sectionTitle: "인턴 경험",
+    },
+
+    featuredProject: {
+      sectionTitle: "대표 프로젝트",
+    },
+
+    sideProjects: {
+      sectionTitle: "사이드 프로젝트",
     },
 
     qualifications: {
@@ -31,10 +41,6 @@ const messages = {
       achievement: "성과",
       organization: "주관",
       date: "일시",
-    },
-
-    techStack: {
-      sectionTitle: "기술 스택",
     },
   },
 };

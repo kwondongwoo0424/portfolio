@@ -18,10 +18,20 @@ const messages = {
       },
     },
 
-    projects: {
-      sectionTitle: "Projects",
-      team: "Team Projects",
-      personal: "Personal Projects",
+    techStack: {
+      sectionTitle: "Tech Stack",
+    },
+
+    internship: {
+      sectionTitle: "Internship",
+    },
+
+    featuredProject: {
+      sectionTitle: "Featured Project",
+    },
+
+    sideProjects: {
+      sectionTitle: "Side Projects",
     },
 
     qualifications: {
@@ -31,10 +41,6 @@ const messages = {
       achievement: "Achievement",
       organization: "Organization",
       date: "Date",
-    },
-
-    techStack: {
-      sectionTitle: "Tech Stack",
     },
   },
 };
