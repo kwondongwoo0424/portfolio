@@ -13,7 +13,7 @@ const ProjectSectionBox = ({
 }: ProjectSectionBoxProps) => {
   return (
     <div>
-      <h4 className="font-medium text-xl">{title}</h4>
+      <h2 className="font-medium text-xl">{title}</h2>
       <p className={`text-sm ${className}`}>{children}</p>
     </div>
   );

@@ -14,16 +14,16 @@ const FeaturedProjectSection = async () => {
         {featuredProjects.map((featuredProject, index) => (
           <div key={index}>
             <div className="flex w-full justify-between items-end">
-              <h3 className="font-bold text-xl">{featuredProject.title}</h3>
+              <h1 className="font-bold text-xl">{featuredProject.title}</h1>
               <span>{featuredProject.projectDuration}</span>
             </div>
 
             {/* 팀원 */}
             <div className="flex flex-col gap-8">
               <div>
-                <h4 className="font-medium text-xl">
+                <h2 className="font-medium text-xl">
                   {featuredProject.projectMembers.title}
-                </h4>
+                </h2>
                 <div>
                   <span className="flex gap-2 items-center">
                     <p>{featuredProject.projectMembers.content.total}</p>
@@ -64,14 +64,14 @@ const FeaturedProjectSection = async () => {
 
               {/* 기술 스택 */}
               <div>
-                <h4 className="font-medium text-xl">
+                <h2 className="font-medium text-xl">
                   {featuredProject.techStacks.title}
-                </h4>
+                </h2>
                 <div className="flex flex-col gap-2">
                   {featuredProject.techStacks.content.map(
                     (techStack, index) => (
                       <div key={index}>
-                        <h6 className="font-semibold">{techStack.name}</h6>
+                        <h3 className="font-semibold">{techStack.name}</h3>
                         <p className="text-sm whitespace-pre-line">
                           {techStack.reason}
                         </p>
@@ -83,14 +83,14 @@ const FeaturedProjectSection = async () => {
 
               {/* 주요 활동 */}
               <div>
-                <h4 className="font-medium text-xl">
+                <h2 className="font-medium text-xl">
                   {featuredProject.activities.title}
-                </h4>
+                </h2>
                 <div className="flex flex-col gap-5">
                   {featuredProject.activities.content.map(
                     (activitie, index) => (
                       <div key={index}>
-                        <h6 className="font-semibold">{activitie.title}</h6>
+                        <h3 className="font-semibold">{activitie.title}</h3>
                         <p className="text-sm">{activitie.content}</p>
                       </div>
                     )
@@ -100,13 +100,13 @@ const FeaturedProjectSection = async () => {
 
               {/* 트러블 슈팅 */}
               <div>
-                <h4 className="font-medium text-xl">
+                <h2 className="font-medium text-xl">
                   {featuredProject.troubleShootings.title}
-                </h4>
+                </h2>
                 {featuredProject.troubleShootings.content.map(
                   (troubleShooting, index) => (
                     <div key={index}>
-                      <h6 className="font-semibold">{troubleShooting.title}</h6>
+                      <h3 className="font-semibold">{troubleShooting.title}</h3>
                       <div className="flex flex-col gap-3 text-sm">
                         <p>{troubleShooting.issue}</p>
                         <p>{troubleShooting.cause}</p>
@@ -129,9 +129,9 @@ const FeaturedProjectSection = async () => {
 
               {/* 기타 활동 */}
               <div>
-                <h4 className="font-medium text-xl">
+                <h2 className="font-medium text-xl">
                   {featuredProject.otherActivities.title}
-                </h4>
+                </h2>
                 {featuredProject.otherActivities.content.map(
                   (otherActivitie, index) => (
                     <div
@@ -147,9 +147,9 @@ const FeaturedProjectSection = async () => {
 
               {/* 참고 자료 */}
               <div>
-                <h4 className="font-medium text-xl">
+                <h2 className="font-medium text-xl">
                   {featuredProject.references.title}
-                </h4>
+                </h2>
                 <div className="flex flex-col gap-1">
                   {featuredProject.references.content.map(
                     (reference, index) => (
