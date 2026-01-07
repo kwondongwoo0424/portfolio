@@ -6,9 +6,83 @@ import "@/styles/globals.css";
 
 const locales = ["ko", "en"];
 
-export const metadata: Metadata = {
-  keywords: ["프론트엔드", "개발자", "포트폴리오", "frontend", "developer", "portfolio"],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+
+  if (locale === "ko") {
+    return {
+      metadataBase: new URL("https://kwondongwoo.com"),
+      title: "권동우 | 프론트엔드 개발자 이력서 포트폴리오",
+      description: "프론트엔드 개발자 권동우의 포트폴리오입니다.",
+      keywords: ["프론트엔드", "개발자", "포트폴리오", "이력서", "웹개발", "React", "Next.js"],
+      authors: [{ name: "권동우" }],
+      openGraph: {
+        type: "website",
+        locale: "ko_KR",
+        url: "https://kwondongwoo.com/ko",
+        title: "권동우 | 프론트엔드 개발자 이력서 포트폴리오",
+        description: "프론트엔드 개발자 권동우의 포트폴리오입니다.",
+        siteName: "권동우 포트폴리오",
+        images: [
+          {
+            url: "/og-image.png",
+            width: 1200,
+            height: 630,
+            alt: "권동우 포트폴리오",
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: "권동우 | 프론트엔드 개발자 이력서 포트폴리오",
+        description: "프론트엔드 개발자 권동우의 포트폴리오입니다.",
+        images: ["/og-image.png"],
+      },
+      robots: {
+        index: true,
+        follow: true,
+      },
+    };
+  }
+
+  return {
+    metadataBase: new URL("https://kwondongwoo.com"),
+    title: "DongWoo Kwon | Frontend Developer Resume Portfolio",
+    description: "Portfolio of DongWoo Kwon, a frontend developer.",
+    keywords: ["frontend", "developer", "portfolio", "resume", "web development", "React", "Next.js"],
+    authors: [{ name: "DongWoo Kwon" }],
+    openGraph: {
+      type: "website",
+      locale: "en_US",
+      url: "https://kwondongwoo.com/en",
+      title: "DongWoo Kwon | Frontend Developer Resume Portfolio",
+      description: "Portfolio of DongWoo Kwon, a frontend developer.",
+      siteName: "DongWoo Kwon Portfolio",
+      images: [
+        {
+          url: "/og-image-en.png",
+          width: 1200,
+          height: 630,
+          alt: "DongWoo Kwon Portfolio",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "DongWoo Kwon | Frontend Developer Resume Portfolio",
+      description: "Portfolio of DongWoo Kwon, a frontend developer.",
+      images: ["/og-image-en.png"],
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+  };
+}
 
 export default async function LocaleLayout({
   children,
