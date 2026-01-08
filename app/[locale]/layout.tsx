@@ -47,6 +47,14 @@ export async function generateMetadata({
         index: true,
         follow: true,
       },
+      alternates: {
+        canonical: "https://kwondongwoo.com/ko",
+        languages: {
+          ko: "https://kwondongwoo.com/ko",
+          en: "https://kwondongwoo.com/en",
+          "x-default": "https://kwondongwoo.com/en",
+        },
+      },
     };
   }
 
@@ -81,6 +89,14 @@ export async function generateMetadata({
     robots: {
       index: true,
       follow: true,
+    },
+    alternates: {
+      canonical: "https://kwondongwoo.com/en",
+      languages: {
+        ko: "https://kwondongwoo.com/ko",
+        en: "https://kwondongwoo.com/en",
+        "x-default": "https://kwondongwoo.com/en",
+      },
     },
   };
 }
