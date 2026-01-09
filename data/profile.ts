@@ -54,7 +54,7 @@ export const commonProfileData = {
   email: "hyeonggyugwon3@gmail.com",
   links: {
     github: "github.com/kwondongwoo0424",
-    linkedin: "linkedin.com/",
+    linkedin: "linkedin.com/in/kwondongwoo",
     notion: "",
   },
 } as const;
