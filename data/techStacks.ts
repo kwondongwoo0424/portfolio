@@ -42,12 +42,20 @@ export const techStacksData: TechStackCategory[] = [
         name: "Next.js",
       },
       {
+        icon: "vuedotjs",
+        name: "Vue.js",
+      },
+      {
         icon: "styledcomponents",
         name: "styled-components",
       },
       {
         icon: "tailwindcss",
         name: "Tailwind CSS",
+      },
+      {
+        icon: "bootstrap",
+        name: "Bootstrap",
       },
       {
         icon: "reactquery",
