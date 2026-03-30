@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
-import profileImg from "@/assets/profileImg.jpeg";
+import profileImg from "@/assets/profileImg.png";
 import { commonProfileData } from "@/data/profile";
 import ProfileStatus from "./ProfileStatus";
 
